@@ -1,16 +1,59 @@
-# React + Vite
+React QR Code Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application built with React and Vite that allows users to generate a QR code from any URL. Users can instantly preview the code and download it as a PNG file or save the original URL as a text file.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+URL to QR Code: Enter any valid URL to generate a QR code.
 
-## React Compiler
+Live Preview: Instantly see the generated QR code.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Download PNG: Download the generated QR code as a high-quality .png file.
 
-## Expanding the ESLint configuration
+Download .txt: Save the original URL you entered as a .txt file.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Loading & Error States: Clear feedback for the user while generating or if an error occurs.
+
+Responsive Design: Looks great on both desktop and mobile devices.
+
+💻 Tech Stack
+
+React: A JavaScript library for building user interfaces (using Hooks).
+
+Vite: A modern, fast frontend build tool.
+
+Plain CSS: Styled with standard CSS for simplicity and performance (no frameworks).
+
+Fetch API: Used for making requests to the QR code generation service.
+
+🚀 How to Run This Project
+
+This guide assumes you have Node.js (version 18 or higher) installed on your machine.
+
+Clone the repository:
+
+git clone [https://github.com/AASTHA8416/qr_code_generator.git](https://github.com/AASTHA8416/qr_code_generator.git)
+
+
+Navigate to the project directory:
+(Based on your repository, the React app is in a subfolder)
+
+cd qr_code_generator/qr_code_generator
+
+
+Install the dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+Open the app:
+Open your browser and go to http://localhost:5173 (or whatever port is shown in your terminal).
+
+API Used
+
+This project uses the free goqr.me API to generate the QR codes. It is simple, fast, and requires no API key.
